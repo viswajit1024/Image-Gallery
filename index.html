@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF‑8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-  <title>Image Gallery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Gallery with Modal Edit</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -14,6 +14,26 @@
     <button type="submit">Add Image</button>
   </form>
   <div id="gallery"></div>
+
+  <!-- Edit Modal using <dialog> -->
+  <dialog id="editDialog">
+    <form method="dialog" id="editForm">
+      <h2>Edit Image</h2>
+      <label>
+        Image URL:<br />
+        <input type="url" id="editUrl" required />
+      </label>
+      <br /><br />
+      <label>
+        Alt Text:<br />
+        <input type="text" id="editAlt" />
+      </label>
+      <menu>
+        <button value="cancel">Cancel</button>
+        <button type="submit">Save</button>
+      </menu>
+    </form>
+  </dialog>
 
   <script src="script.js"></script>
 </body>
