@@ -1,2 +1,4 @@
-# Image-Gallery
-Buiding an image gallery app in pure HTML,CSS and JS
+<h1> <strong>Image-Gallery</strong></h1>
+<h2> An Image Gallery website with the following functionalities :- </h2>
+-hi
+
