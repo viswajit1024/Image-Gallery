@@ -20,19 +20,42 @@ form {
   padding: 0.5rem;
   text-align: center;
 }
-.image-item img {
-  max-width: 100%;
-  display: block;
-}
-.image-item span {
+.image-item img , span {
   max-width: 100%;
   display: block;
 }
 .image-item .controls {
   margin-top: 0.5rem;
 }
-.image-item button, .image-item .edit {
+.image-item button {
   margin: 0 0.25rem;
   padding: 0.25rem 0.5rem;
   cursor: pointer;
+}
+
+/* Dialog styling */
+dialog {
+  border: none;
+  border-radius: 8px;
+  padding: 1.5rem;
+  max-width: 400px;
+  width: 90%;
+}
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+}
+dialog h2 {
+  margin-top: 0;
+}
+dialog input {
+  width: 100%;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+dialog menu {
+  margin-top: 1rem;
+  text-align: right;
+}
+dialog menu button {
+  margin-left: 0.5rem;
 }
