@@ -14,3 +14,4 @@
 - Editing enabled via an “Edit” button using prompt() dialogs
 
 # Note : The code in modals branch uses modals instead of prompt() inputs for editing the url and alt text
+ create dummy images url using https://picsum.photos/ website
