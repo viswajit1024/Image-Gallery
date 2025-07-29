@@ -1,0 +1,38 @@
+body {
+  font-family: sans-serif;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+#gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1rem;
+}
+.image-item {
+  position: relative;
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+  text-align: center;
+}
+.image-item img {
+  max-width: 100%;
+  display: block;
+}
+.image-item span {
+  max-width: 100%;
+  display: block;
+}
+.image-item .controls {
+  margin-top: 0.5rem;
+}
+.image-item button, .image-item .edit {
+  margin: 0 0.25rem;
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
+}
